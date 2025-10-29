@@ -3,6 +3,7 @@ pillow
 numpy
 opencv-python
 scikit-learn
+rdkit-pypi
 
 
 
