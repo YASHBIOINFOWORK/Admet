@@ -5,6 +5,15 @@ from rdkit.Chem import Descriptors, Draw
 from io import StringIO
 from PIL import Image
 import plotly.express as px
+import os
+import sys
+
+# Auto-install RDKit if missing
+try:
+    from rdkit import Chem
+except ModuleNotFoundError:
+    os.system(f"{sys.executable} -m pip install rdkit-pypi")
+    from rdkit import Chem
 
 # =========================
 # PAGE CONFIG & STYLING
@@ -226,4 +235,5 @@ if st.button("🚀 Analyze & Prioritize Candidates") and df_input is not None:
 
 else:
     st.info("👆 Upload, paste, or load example data, then click **Analyze & Prioritize Candidates** to start.")
+
 
