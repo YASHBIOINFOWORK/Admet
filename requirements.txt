@@ -1,6 +1,12 @@
-streamlit
-pandas
+streamlit==1.38.0
 rdkit==2022.9.5
-pillow
-plotly
+pandas==2.2.3
+numpy==1.26.4
+matplotlib==3.9.2
+seaborn==0.13.2
+pillow==10.4.0
+requests==2.32.3
+plotly==5.24.1
+scikit-learn==1.5.2
+
 
