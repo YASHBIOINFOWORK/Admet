@@ -1,8 +1,5 @@
-streamlit
-pillow
-numpy
-opencv-python
-scikit-learn
+
+
 
 
 
